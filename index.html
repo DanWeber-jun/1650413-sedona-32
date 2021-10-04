@@ -10,13 +10,13 @@
       <nav class="navigation"> 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Гостиницы</a>
+            <a href="catalog.html" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
         <a href="#">
@@ -35,7 +35,7 @@
               </div>
           </li>
           <li class="navigation-item">
-              <button class="navigation-link btn header-btn">
+              <button class="navigation-link header-btn">
                 <span class="header-btn-text"> Хочу сюда!</span>
               </button>
           </li>
@@ -43,18 +43,18 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main-index">
       <section class="first-screen-section">
         <div class="first-screen-title">
           <h1 class="visually-hidden">sedona</h1>
           <img src="img/first-screen/welcome.svg" alt="Приглашение в Седону">
         </div>
-        <img src="img/first-screen/index-background.jpg" alt="Прекраснейшие горы с зёлоной растительностью">
+        <img class="first-screen-background" src="img/first-screen/index-background.jpg" alt="Прекраснейшие горы с зёлоной растительностью">
         <img class="divider" src="img/first-screen/divider.svg" alt="#">
       </section>
       <section class="advantages-section">
-        <h2 class="-title">Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
-        <p class="remark-advantages-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+        <p class="advantages-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <div class="advantage-items-list">
           <ol class="advantage-items">
             <li class="advantage-item">
@@ -88,7 +88,7 @@
               </ul>
             </li>
 
-            <li class="advantage-item bridge">
+            <li class="advantage-item">
               <div class="reason reason-wrapper">
                 <img class="reason-img" src="img/section-2/photo-2.jpg" alt="Каньон" width="800px" height="384px">
                   <div class="reason-accent">
@@ -126,18 +126,18 @@
       </section>
       <section class="hotels-search-section">
         <h2 class="hotels-search-title">Заинтересовались?</h2>
-        <p class="hotels-search-title-remark">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="hotels-search-btn">
-          <span class="hotels-search-btn-text">ПОИСК ГОСТИНИЦЫ В седоне</span>
-        </button>
+        <p class="hotels-search-subtitle">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="catalog.html" class="hotels-search-btn">
+          <span class="hotels-search-btn-text">Поиск гостиницы в седоне</span>
+        </a>
       </section>
       <section class="mailing-section">
         <form action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset>
             <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-            <p class="mailing-title-remark">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <img src="img/background.jpg" alt="Размытое фото каньона">
-            <input class="email" id="email" type="email" placeholder="Ваш e-mail">
+            <p class="mailing-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <img class="mailing-background" src="img/background.jpg" alt="Размытое фото каньона">
+            <input class="mailing-email" id="email" type="email" placeholder="Ваш e-mail">
             <button class="mailing-subscribe-btn">Подписаться</button>
           </fieldset>
         </form>
