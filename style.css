@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main-header {
+    background: #fff;
+    color: #000;
+}
+
+.navigation-item {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.main-logo {
+    width: 138px;
+    height: 70px;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.heart-icon {
+    width: 18px;
+    height: 17px;
+}
+
+.wish-quantity {
+    width: 19px;
+    height: 19px;
+    background-color: #7DB54F;
+    border-radius: 50%;
+}
+
+.wish-quantity-number {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -10%;
+}
+
+.header-btn {
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    background-color: #756257;
+    border: none;
+}
+
+.header-btn-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}

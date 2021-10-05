@@ -16,20 +16,20 @@
               <a href="#" class="navigation-link">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link navigation-link-current">Гостиницы</a>
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
           <a href="index.html">
-            <img src="img/header/sedona.svg" alt="Логотип с мостом и каньоном" class="main-logo">
+            <img src="img/catalog/header/sedona.svg" alt="Логотип с мостом и каньоном" class="main-logo" width="138" height="70">
           </a>
           <ul class="navigation-list  navigation-user">
             <li class="navigation-item ">
                 <span class="visually-hidden">Поиск</span>
-                <img src="img/header/search.svg" alt="Поиск" class="search-icon">
+                <img src="img/catalog/header/search.svg" alt="Поиск" class="search-icon" width="18" height="18">
             </li>
             <li class="navigation-item">
                 <span class="visually-hidden">Список желаний</span>
-                <img src="img/header/heart.svg" alt="Сердце" class="heart-icon">
+                <img src="img/catalog/header/heart.svg" alt="Сердце" class="heart-icon" width="18" height="17">
                 <div class="wish-quantity">
                   <span class="wish-quantity-number">12</span>
                 </div>
@@ -47,7 +47,7 @@
         <section class="filter">
             <div class="filter-first-screen">
                 <form class="filter-housing" action="https://echo.htmlacademy.ru/" method="POST">
-                    <img class="filter-housing-img" src="#" alt="Размытое фото каньона">
+                    <img class="filter-housing-img" src="img/catalog/filter-section/catalog-background 1.jpg" alt="Размытое фото каньона" width="1200" height="408">
                     <div>
                         <h1 class="filter-housing-title">Гостиницы Седоны</h1>
                         <div class="filter-housing-home-svg"></div>
@@ -60,17 +60,17 @@
                             <ul class="infrastructure-list">
                                 <li>
                                     <label for="pool">
-                                        <input id="pool" type="checkbox" checked >Бассейн
+                                        <input id="pool" type="checkbox" name="infrastructure-pool" checked >Бассейн
                                     </label>
                                 </li>
                                 <li>
                                     <label for="parking">
-                                        <input id="parking" type="checkbox" checked>Парковка
+                                        <input id="parking" type="checkbox" name="infrastructure-parking" checked>Парковка
                                     </label> 
                                 </li>
                                 <li>
                                     <label for="wi-fi">
-                                        <input id="wi-fi" type="checkbox">Wi-Fi
+                                        <input id="wi-fi" type="checkbox" name="infrastructure-wi-fi">Wi-Fi
                                     </label> 
                                 </li>
                             </ul>
@@ -97,20 +97,20 @@
                         </fieldset>
                         <fieldset class="adjustment-device">
                             <p class="adjustment-device-name">Стоимость, ₽:</p>
-                            <input class="price-from" type="number" placeholder="от" required>
-                            <input class="price-to" type="number" placeholder="до">
+                            <input class="price-from" type="number" name="price-from" placeholder="от" required>
+                            <input class="price-to" type="number" name="price-to" placeholder="до">
                             <label for="range">
-                                <input class="price-range" id="range" type="range">
+                                <input class="price-range" id="range" name="price-range" type="range">
                             </label>
                         </fieldset>
                     </div>
-                </form>
                 <button class="filter-btn-apply">
                     <span class="filter-btn-apply-text">Применить</span>
                 </button>
                 <button class="filter-btn-reset">
                     <span class="filter-btn-reset-text">Сбросить</span>
                 </button>
+                </form>
             </div>
             <div class="results">
                 <div class="results-filter">
@@ -131,7 +131,7 @@
                 <div class="gray-top-line"></div>
                 <ul class="hotels">
                     <li class="hotel">
-                        <img class="hotel-img" src="#" alt="Гостиница на горной местности">
+                        <img class="hotel-img" src="img/catalog/hotels-section/hotel-1.jpg" alt="Гостиница на горной местности" width="180" height="120">
                         <h3 class="hotel-title">Amara Resort & Spa</h3>
                         <p class="hotel-type">Гостиница</p>
                         <b class="hotel-price">От 4000 ₽</b>
@@ -151,7 +151,7 @@
                         </div>
                     </li>
                     <li class="hotel">
-                        <img class="hotel-img" src="#" alt="Гостиница на горной местности">
+                        <img class="hotel-img" src="img/catalog/hotels-section/hotel-2.jpg" alt="Гостиница на горной местности" width="180" height="120">
                         <h3 class="hotel-title">Desert Quail Inn</h3>
                         <p class="hotel-type">Мотель</p>
                         <b class="hotel-price">От 3000 ₽</b>
@@ -171,7 +171,7 @@
                         </div>
                     </li>
                     <li class="hotel">
-                        <img class="hotel-img" src="#" alt="Гостиница на горной местности">
+                        <img class="hotel-img" src="img/catalog/hotels-section/hotel-3.jpg" alt="Гостиница на горной местности" width="180" height="120">
                         <h3 class="hotel-title">Villas at Poco Diablo</h3>
                         <p class="hotel-type">Апартаменты</p>
                         <b class="hotel-price">От 2000 ₽</b>
@@ -191,7 +191,7 @@
                         </div>
                     </li>
                     <li class="hotel">
-                        <img class="hotel-img" src="#" alt="Гостиница на горной местности">
+                        <img class="hotel-img" src="img/catalog/hotels-section/hotel-4.jpg" alt="Гостиница на горной местности" width="180" height="120">
                         <h3 class="hotel-title">GreenTree Inn</h3>
                         <p class="hotel-type">Гостиница</p>
                         <b class="hotel-price">От 3000 ₽</b>
@@ -236,8 +236,8 @@
                   <fieldset>
                     <h2 class="catalog-mailing-title">Подпишитесь на рассылку</h2>
                     <p class="catalog-mailing-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-                    <input class="catalog-mailing-email" id="email" type="email" placeholder="Ваш e-mail" required>
-                    <button class="catalog-mailing-subscribe-btn">Подписаться</button>
+                    <input class="catalog-mailing-email" id="email" type="email" name="email" placeholder="Ваш e-mail" required>
+                    <button class="catalog-mailing-subscribe-btn" type="submit">Подписаться</button>
                   </fieldset>
                 </form>
               </section>
@@ -248,22 +248,22 @@
         <div class="social-media">
           <a href="#" class="social-media-twitter">
             <span class="visually-hidden">Твитер</span>
-            <img src="img/footer/social-twitter.svg" alt="Твитер" class="twitter-icon">
+            <img src="img/catalog/footer/social-twitter.svg" alt="Твитер" class="twitter-icon" width="18" height="15">
           </a>
           <a href="#" class="social-media-facebook">
             <span class="visually-hidden">Фейсбук</span>
-            <img src="img/footer/social-facebook.svg" alt="Фейсбук" class="facebook-icon">
+            <img src="img/catalog/footer/social-facebook.svg" alt="Фейсбук" class="facebook-icon" width="10" height="18">
           </a>
           <a href="#" class="social-media-youtube">
             <span class="visually-hidden">Ютуб</span>
-            <img src="img/footer/social-youtube.svg" alt="Ютуб" class="youtube-icon">
+            <img src="img/catalog/footer/social-youtube.svg" alt="Ютуб" class="youtube-icon" width="20" height="16">
           </a>
         </div>
         <div class="phone-number">
           <a href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
         <div class="logo">
           <a href="https://echo.htmlacademy.ru/">
-            <img src="img/footer/logo_htmlacademy.svg" alt="Логотип HTML academy" class="logo-html-academy">
+            <img src="img/catalog/footer/logo_htmlacademy.svg" alt="Логотип HTML academy" class="logo-html-academy">
           </a>
         </div>
     </footer>
