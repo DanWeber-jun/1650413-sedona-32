@@ -10,16 +10,16 @@
         <nav class="navigation"> 
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="" class="navigation-link">Главная</a>
+              <a href="index.html" class="navigation-link">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link navigation-link-current">Гостиницы</a>
+              <a href="#" class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
-          <a href="#">
+          <a href="index.html">
             <img src="img/header/sedona.svg" alt="Логотип с мостом и каньоном" class="main-logo">
           </a>
           <ul class="navigation-list  navigation-user">
@@ -60,7 +60,7 @@
                             <ul class="infrastructure-list">
                                 <li>
                                     <label for="pool">
-                                        <input id="pool" type="checkbox" checked>Бассейн
+                                        <input id="pool" type="checkbox" checked >Бассейн
                                     </label>
                                 </li>
                                 <li>
@@ -80,24 +80,24 @@
                             <ul class="housing-type-list">
                                 <li>
                                     <label for="hotel">
-                                        <input id="hotel" type="radio" checked>Гостиница
+                                        <input id="hotel" type="radio" name="housing-type" checked>Гостиница
                                     </label>
                                 </li>
                                 <li>
                                     <label for="motel">
-                                        <input id="motel" type="radio">Мотель
+                                        <input id="motel" type="radio" name="housing-type">Мотель
                                     </label> 
                                 </li>
                                 <li>
                                     <label for="apartments">
-                                        <input id="apartments" type="radio">Апартаменты
+                                        <input id="apartments" type="radio" name="housing-type">Апартаменты
                                     </label> 
                                 </li>
                             </ul>
                         </fieldset>
                         <fieldset class="adjustment-device">
                             <p class="adjustment-device-name">Стоимость, ₽:</p>
-                            <input class="price-from" type="number" placeholder="от">
+                            <input class="price-from" type="number" placeholder="от" required>
                             <input class="price-to" type="number" placeholder="до">
                             <label for="range">
                                 <input class="price-range" id="range" type="range">
@@ -119,9 +119,13 @@
                         <option class="results-order-cheap" value="Сначала дешевые">Сначала дешевые</option>
                     </select>
                     <div class="results-display-way">
-                        <button class="results-display-way-btn"></button>
-                        <button class="results-display-way-btn"></button>
-                        <button class="results-display-way-btn"></button>
+                        <button class="results-display-way-btn">
+                            <span class="visually-hidden">в ряд</span>
+                        </button>
+                        <button class="results-display-way-btn">
+                            <span class="visually-hidden">большим окно</span>
+                        </button>
+                        <button class="results-display-way-btn">колонной</button>
                     </div> 
                 </div>
                 <div class="gray-top-line"></div>
@@ -145,7 +149,6 @@
                                 <span class="hotel-rating-btn-text">Рейтинг: 8,5</span>
                             </button>
                         </div>
-                        <div class="gray-bottom-line"></div>
                     </li>
                     <li class="hotel">
                         <img class="hotel-img" src="#" alt="Гостиница на горной местности">
@@ -166,7 +169,6 @@
                                 <span class="hotel-rating-btn-text">Рейтинг: 8,5</span>
                             </button>
                         </div>
-                        <div class="gray-bottom-line"></div>
                     </li>
                     <li class="hotel">
                         <img class="hotel-img" src="#" alt="Гостиница на горной местности">
@@ -187,7 +189,6 @@
                                 <span class="hotel-rating-btn-text">Рейтинг: 8,5</span>
                             </button>
                         </div>
-                        <div class="gray-bottom-line"></div>
                     </li>
                     <li class="hotel">
                         <img class="hotel-img" src="#" alt="Гостиница на горной местности">
@@ -208,19 +209,17 @@
                                 <span class="hotel-rating-btn-text">Рейтинг: 8,5</span>
                             </button>
                         </div>
-                        <div class="gray-bottom-line"></div>
                         <button class="load-more-btn">
                             <span class="load-more-btn-text">Загрузить еще</span>
                         </button>
-                        <div class="gray-bottom-line"></div>
                         <div class="hotels-pagination">
                             <div class="hotels-page-btns">
-                                <button class="hotels-page-btn">1</button>
-                                <button class="hotels-page-btn">2</button>
-                                <button class="hotels-page-btn">3</button>
-                                <button class="hotels-page-btn">4</button>
-                                <button class="hotels-page-btn">...</button>
-                                <button class="hotels-page-btn">10</button>
+                                <a href="#" class="hotels-page-btn">1</a>
+                                <a href="#" class="hotels-page-btn">2</buttaon>
+                                <a href="#" class="hotels-page-btn">3</button>
+                                <a href="#" class="hotels-page-btn">4</a>
+                                <a href="#" class="hotels-page-btn">...</a>
+                                <a href="#" class="hotels-page-btn">10</a>
                             </div>
                             <div class="hotels-quantity">
                                 <p class="hotels-quantity-text">Гостиниц на странице:</p>
@@ -237,7 +236,7 @@
                   <fieldset>
                     <h2 class="catalog-mailing-title">Подпишитесь на рассылку</h2>
                     <p class="catalog-mailing-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-                    <input class="catalog-mailing-email" id="email" type="email" placeholder="Ваш e-mail">
+                    <input class="catalog-mailing-email" id="email" type="email" placeholder="Ваш e-mail" required>
                     <button class="catalog-mailing-subscribe-btn">Подписаться</button>
                   </fieldset>
                 </form>
