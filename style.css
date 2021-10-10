@@ -477,3 +477,11 @@ input[type="email"]::placeholder {
     margin-top: 42px;
     margin-right: 72px;
 }
+
+
+
+
+
+.filter-first-screen {
+    background: url(img/catalog/filter-section/catalog-background.jpg) no-repeat;
+}
