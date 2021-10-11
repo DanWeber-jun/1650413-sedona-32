@@ -28,6 +28,7 @@ body {
     color: #000;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 .main-container {
@@ -130,7 +131,7 @@ body {
 .first-screen-section {
     width: 1200px;
     min-height: 485px;
-    background-image: url("img/index/first-screen/Group\ 2.jpg");
+    background-image: url("img/index/first-screen/first-screen.jpg");
     background-repeat: no-repeat;
     margin: 0 auto ;
 }
@@ -205,25 +206,12 @@ body {
     background-color: #83B3D3;
 }
 
-.reason-wrapper .reason-title {
-    width: 180px;
-}
-
-.reason-wrapper .reason-description{
-    width: 250px;
-    /* margin-bottom: ; */
-}
-
-.reason-accent .reason-description {
-    width: 220px;
-}
-
 .reason-img {
     width: 800px;
 }
 
 .reason-title {
-    width: 150px;
+    width: 180px;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -257,8 +245,12 @@ body {
     line-height: 21px;
     min-height: 73px;
     margin-bottom: 77px;
+    width: 250px;
 }
 
+.reason-accent .reason-description {
+    width: 220px;
+}
 
 .features-list {
     display: flex;
@@ -347,12 +339,16 @@ body {
 }
 
 .hotels-search-btn-text {
+    display: block;
     width: 575px;
+    min-height: 30px;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     color: #fff;
     text-transform: uppercase;
+    margin-top: 13px;
+    margin-bottom: 17px;
 }
 
 .mailing-section {
@@ -482,6 +478,49 @@ input[type="email"]::placeholder {
 
 
 
+.main-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.filter {
+    margin: 0;
+}
+
 .filter-first-screen {
+    margin: 0;
     background: url(img/catalog/filter-section/catalog-background.jpg) no-repeat;
+}
+
+.filter-housing-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    width: 528px;
+    min-height: 68px;
+    color: #fff;
+    margin-top: 38px;
+    margin-left: 71px;
+}
+
+.filter-housing-select {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.adjustment-devices {
+    display: flex;
+}
+
+
+.adjustment-device {
+    align-self: center;
+    border: none;
+    margin-bottom: 83px;
+}
+
+.list {
+    list-style-type: none;
 }

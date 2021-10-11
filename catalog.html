@@ -47,16 +47,16 @@
         <section class="filter">
             <div class="filter-first-screen">
                 <form class="filter-housing" action="https://echo.htmlacademy.ru/" method="POST">
-                    <div>
+                    <div class="no-flex">
                         <h1 class="filter-housing-title">Гостиницы Седоны</h1>
-                        <div class="filter-housing-home-svg"></div>
-                        <div class="filter-housing-arrow-svg"></div>
+                        <img class="filter-housing-home-svg" src="img/catalog/filter-section/home 1.svg" alt="Домик">
+                        <img class="filter-housing-arrow-svg" src="img/catalog/filter-section/nav-link 1.svg" alt="Иконка >">
                         <b class="filter-housing-select">Гостиницы</b>
                     </div>
                     <div class="adjustment-devices">
                         <fieldset class="adjustment-device"> 
                             <p class="adjustment-device-name">Инфраструктура:</p>
-                            <ul class="infrastructure-list">
+                            <ul class="infrastructure-list list">
                                 <li>
                                     <label for="pool">
                                         <input id="pool" type="checkbox" name="infrastructure-pool" checked >Бассейн
@@ -74,9 +74,9 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="adjustment-device">
+                        <fieldset class="adjustment-device ">
                             <p class="adjustment-device-name">Тип жилья:</p>
-                            <ul class="housing-type-list">
+                            <ul class="housing-type-list list">
                                 <li>
                                     <label for="hotel">
                                         <input id="hotel" type="radio" name="housing-type" checked>Гостиница
@@ -124,11 +124,13 @@
                         <button class="results-display-way-btn">
                             <span class="visually-hidden">большим окно</span>
                         </button>
-                        <button class="results-display-way-btn">колонной</button>
+                        <button class="results-display-way-btn">
+                            <span class="visually-hidden">колонной</span>
+                        </button>
                     </div> 
                 </div>
                 <div class="gray-top-line"></div>
-                <ul class="hotels">
+                <ul class="hotels list">
                     <li class="hotel">
                         <img class="hotel-img" src="img/catalog/hotels-section/hotel-1.jpg" alt="Гостиница на горной местности" width="180" height="120">
                         <h3 class="hotel-title">Amara Resort & Spa</h3>
