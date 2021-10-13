@@ -22,13 +22,14 @@ body {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: #fff;
     color: #000;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    width: 1200px;
 }
 
 .main-container {
@@ -57,22 +58,39 @@ body {
     background: #fff;
     width: 1200px;
     margin: 0 auto;
+    margin-left: 73px;
+    margin-right: 73px;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 1056px;
+    margin: 0;
+    /* margin-left: 73px; */
+    
 }
 
 .navigation-list {
     display: flex;
     align-items: center;
+    padding-left: 0;
+    
 }
 
-.navigation-item {
+.navigation-menu{
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
+    list-style: none;
+    
+}
+
+.navigation-menu:not(:last-child) {
+    margin-right: 33px;
+}
+
+.navigation-user {
     list-style: none;
 }
 
@@ -82,11 +100,13 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: #000;
-    margin-right: 33px;
 }
 
 .main-logo {
     width: 138px;
+    /* margin: 0 auto; */
+    list-style: none;
+    margin-left: -10px;
 }
 
 .search-icon {
@@ -96,7 +116,6 @@ body {
 
 .heart-icon {
     width: 18px;
-    margin-right: 33px;
 }
 
 /* .wish-quantity {
@@ -117,7 +136,8 @@ body {
     border-radius: 4px;
     background-color: #756257;
     border: none;
-    margin: 0px 72px 0px 20px;
+    margin: 0px  0px 0px 20px;
+    padding-right: 0;
 }
 
 .header-btn-text {
@@ -157,9 +177,6 @@ body {
     padding: 0;
 }
 
-.advantage-item {
-    
-}
 
 .advantage-item:nth-of-type(4) {
     background-color: #83B3D333;
@@ -369,6 +386,7 @@ body {
     min-height: 50px;
     margin: 94px auto 15px;
     text-transform: uppercase;
+
 }
 
 .mailing-subtitle {
@@ -418,8 +436,10 @@ input[type="email"]::placeholder {
 .mailing-subscribe-btn-text {
     color: #fff;
     font-size: 20px;
+    font-weight: 700;
     line-height: 26px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .main-footer {
@@ -474,22 +494,20 @@ input[type="email"]::placeholder {
     margin-right: 72px;
 }
 
-
-
-
-
 .main-inner {
     width: 1200px;
     margin: 0 auto;
 }
 
-.filter {
-    margin: 0;
+.filter-first-screen {
+    display: flex;
+    justify-content: space-between;
+    background: url(img/catalog/filter-section/catalog-background.jpg) no-repeat;
+  
 }
 
-.filter-first-screen {
-    margin: 0;
-    background: url(img/catalog/filter-section/catalog-background.jpg) no-repeat;
+.filter-first-screen-tools {
+    margin-left: 73px;
 }
 
 .filter-housing-title {
@@ -500,7 +518,15 @@ input[type="email"]::placeholder {
     min-height: 68px;
     color: #fff;
     margin-top: 38px;
-    margin-left: 71px;
+    margin-bottom: 0;
+    margin-left: -2px;
+    text-align: start;
+}
+
+.filter-housing-type {
+    width: 111px;
+    min-height: 21px;
+    margin-top: 5px;
 }
 
 .filter-housing-select {
@@ -510,8 +536,24 @@ input[type="email"]::placeholder {
     line-height: 21px;
 }
 
+.adjustment {
+    display: flex;
+}
+
 .adjustment-devices {
     display: flex;
+}
+
+.adjustment-device-name {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 
@@ -519,8 +561,370 @@ input[type="email"]::placeholder {
     align-self: center;
     border: none;
     margin-bottom: 83px;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .list {
     list-style-type: none;
+    padding-left: 0;
+}
+
+.adjustment-device-price {
+    display: flex;
+    align-items: center;
+}
+
+.price-from {
+    border: 2px solid #fff;
+    border-radius: 4px 0 0 4px;
+    background-color: transparent;
+    width: 144px;
+    min-height: 48px;
+    text-align: end;
+    vertical-align: middle;
+    font-size: 18px;
+    border-right: none;
+}
+
+.price-to {
+    border: 2px solid #fff;
+    border-radius: 0 4px 4px 0;
+    background-color: transparent;
+    width: 144px;
+    min-height: 48px;
+    text-align: end;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.filter-btn-apply {
+    width: 160px;
+    height: 48px;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    border: none;
+}
+
+.filter-btn-apply-text {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.filter-btn-reset {
+    background-color: transparent;
+    width: 160px;
+    min-height: 23px;
+    line-height: 21px;
+    border: none;
+}
+
+.filter-btn-reset-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+ 
+}
+
+.results {
+    margin-left: 72px;
+}
+
+.results-filter {
+    width: 1056px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results-order {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    width: 287px;
+    height: 48px;
+    appearance: none;
+    background: url(img/catalog/hotels-section/dropdown.svg) no-repeat;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.results-quantity-hotels {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.results-display-way-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    border: 2px solid #E6E6E6;
+    background-color: #fff;
+}
+
+.border {
+    width: 1056px;
+}
+
+.hotels {
+    display: flex;
+    width: 1056px;
+    flex-direction: column;
+}
+
+.hotel {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+
+.hotel-title {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    margin: 0;
+    text-align: start;
+}
+
+.hotel-type-price {
+    display: flex;
+    margin-top: 1px;
+    margin-bottom: 31px;
+}
+
+.hotel-type {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333;
+    margin: 0;
+    margin-right: 78px;
+}
+
+.hotel-price {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333;
+    font-weight: 400;
+}
+
+.hotel-btns {
+    display: flex;
+}
+
+.hotel-button {
+    margin-right: 8px;
+}
+
+.hotel-details-link {
+    width: 151px;
+    height: 37px;
+    background-color: #756257;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.hotel-to-favorite-btn {
+    width: 160px;
+    height: 37px;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    font-size: 16px;
+}
+
+.selected {
+    background-color: #7DB54F;
+}
+
+.hotel-rating-btn {
+    border: none;
+    background-color: #F2F2F2;
+    width: 160px;
+    height: 37px;
+    color: #333;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.hotel-info {
+    margin-left: 36px;
+    margin-right:  auto;
+    min-height: 120px;
+}
+
+.load-more-btn {
+    display: block;
+    color: #fff;;
+    width: 625px;
+    height: 55px;
+    background-color: #83B3D3;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.hotels-pagination {
+    display: flex;
+    margin-top: 61px;
+    width: 1056px;
+}
+
+.hotels-page-btns {
+    display: flex;
+    margin: 0;
+    margin-right: auto;
+}
+
+.hotels-page-btn {
+    display: block;
+    width: 55px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    /* как выровнять по вертикали? */
+    padding: 13px;
+    margin-right: 8px;
+}
+
+.active-btn {
+    background-color: #F2F2F2;
+    color: #000;
+}
+
+.hotels-quantity {
+    display: flex;
+}
+
+.hotels-quantity-text {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    margin-right: 51px;
+}
+
+.hotels-quantity-order {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    width: 160px;
+    height: 48px;
+    appearance: none;
+    background: url(img/catalog/hotels-section/dropdown.svg) no-repeat;
+    padding-left: 17px;
+    margin-top: 5px;
+}
+
+
+.catalog-mailing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.catalog-mailing-form-fieldset {
+    border: none;
+}
+
+/* .catalog-mailing-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.catalog-mailing-subtitle {
+    text-align: center;
+} */
+
+.catalog-mailing-title {
+    color:#000;
+    /* width: 720px; */
+    font-size: 30px;
+    line-height: 36px;
+    min-height: 50px;
+    /* margin: 94px auto 15px; */
+    text-transform: uppercase;
+    margin-top: 89px;
+}
+
+.catalog-mailing-subtitle {
+    color:#000;
+    width: 520px;
+    min-height: 72px;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 auto 26px;
+}
+
+.catalog-mailing-submit-section {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 138px;
+}
+
+.catalog-mailing-email {
+    width: 600px;
+    min-height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    margin: 0;
+}
+
+input[type="email"]::placeholder {
+    width: 559px;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "PT Sans", sans-serif;
+    padding: 0 19px 0 22px;
+}
+
+.catalog-mailing-subscribe-btn {
+    width: 200px;
+    min-height: 60px;
+    border-radius: 0 10px 10px 0;
+    background-color: #83B3D3;
+    border: none;
+    margin: 0;
+}
+
+.catalog-mailing-subscribe-btn-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
 }
