@@ -7,42 +7,46 @@
 </head>
 <body>
     <header class="main-header">
-      <div class="border">
       <nav class="navigation"> 
-        <ul class="navigation-list">
-          <li class="navigation-item navigation-menu">
-            <a class="navigation-link navigation-link-current text">Главная</a>
-          </li>
-          <li class="navigation-item navigation-menu">
-            <a href="#" class="navigation-link text">О Седоне</a>
-          </li>
-          <li class="navigation-item navigation-menu">
-            <a href="catalog.html" class="navigation-link text">Гостиницы</a>
-          </li>
-        </ul>
-        <a href="#">
-          <img src="img/index/header/sedona.svg" alt="Логотип с мостом и каньоном" class="main-logo" width="138" height="70">
-        </a>
-        <ul class="navigation-list  navigation-user">
-          <li class="navigation-item ">
-              <span class="visually-hidden">Поиск</span>
-              <img src="img/index/header/search.svg" alt="Поиск" class="search-icon" width="18" height="18">
-          </li>
-          <li class="navigation-item">
-              <span class="visually-hidden">Список желаний</span>
-              <img src="img/index/header/heart.svg" alt="Сердце" class="heart-icon" width="18" height="17">
-              <!-- <div class="wish-quantity">
-                <span class="wish-quantity-number">12</span>
-              </div> -->
-          </li>
-          <li class="navigation-item">
-              <button class="navigation-link header-btn">
-                <span class="header-btn-text"> Хочу сюда!</span>
-              </button>
-          </li>
-        </ul>
+        <div class="navigation-block">
+          <ul class="navigation-list">
+            <li class="navigation-item navigation-menu">
+              <a class="navigation-link navigation-link-current text">Главная</a>
+            </li>
+            <li class="navigation-item navigation-menu">
+              <a class="navigation-link text" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item navigation-menu">
+              <a class="navigation-link text" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation-logo-block">
+          <a href="#">
+            <img src="img/index/header/sedona.svg" alt="Логотип с мостом и каньоном" class="main-logo" width="138" height="70">
+          </a>
+        </div>
+        <div class="navigation-user-blcok">
+          <ul class="navigation-list  navigation-user">
+            <li class="navigation-item navigation-item-search">
+                <span class="visually-hidden">Поиск</span>
+                <img src="img/index/header/search.svg" alt="Поиск" class="search-icon" width="18" height="18">
+            </li>
+            <li class="navigation-item navigation-item-heart">
+                <span class="visually-hidden">Список желаний</span>
+                <img src="img/index/header/heart.svg" alt="Сердце" class="heart-icon" width="18" height="17">
+                <!-- <div class="wish-quantity">
+                  <span class="wish-quantity-number">12</span>
+                </div> -->
+            </li>
+            <li class="navigation-item">
+                <button class="navigation-link header-btn">
+                  <span class="header-btn-text"> Хочу сюда!</span>
+                </button>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
     </header>
 
     <main class="main-index main-container">
