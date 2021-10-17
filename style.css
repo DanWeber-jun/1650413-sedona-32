@@ -39,10 +39,14 @@ body {
 
 .visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
     width: 1px;
+    height: 1px;
     margin: -1px;
-}
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 *,
 *::before,
@@ -57,18 +61,11 @@ body {
 .main-header {
     background: #fff;
     width: 1200px;
-    /* margin: 0 auto; */
-    /* margin-left: 73px; */
-    /* margin-right: 73px; */
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    /* width: 1056px; */
-    /* margin: 0; */
-    /* margin-left: 73px; */
-    
 }
 
 .navigation-block {
@@ -89,9 +86,6 @@ body {
     justify-content: space-between;
     padding: 0;
     margin-left: 72px;
-    /* align-items: center;
-    padding-left: 0; */
-    
 }
 
 .navigation-menu{
@@ -140,7 +134,7 @@ body {
     width: 18px;
 }
 
-.navigation-item-heart {
+.navigation-item-favorite {
     align-self: center;
     margin-right: 33px;
 }
@@ -163,8 +157,6 @@ body {
     border-radius: 4px;
     background-color: #756257;
     border: none;
-    /* margin: 0px  0px 0px 20px; */
-    /* padding-right: 0; */
 }
 
 .header-btn-text {
@@ -298,14 +290,12 @@ body {
 
 .features-list {
     display: flex;
-    /* justify-content: flex-start; */
     list-style: none;
     width: 1200px;
     padding: 0;
 }
 
 .feature-item {
-    /* display: flex; */
     width: 400px;
     margin: 0 auto;
 }
@@ -478,7 +468,6 @@ input[type="email"]::placeholder {
 .main-footer-items {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .main-footer a{
@@ -496,17 +485,14 @@ input[type="email"]::placeholder {
 
 .social-media-twitter {
     width: 18px;
-    /* margin: 50px 29px 55px 72px; */
 }
 
 .social-media-facebook {
     width: 10px;
-    /* margin: 49px 30px 53px 0, */
 }
 
 .social-media-youtube {
     width: 20px;
-    /* margin: 50px 61px 54px 0; */
 }
 
 .phone-number {
@@ -710,7 +696,7 @@ input[type="email"]::placeholder {
 }
 
 
-.hotel-title {
+.hotel-name {
     font-size: 24px;
     line-height: 31px;
     font-weight: 700;
@@ -838,7 +824,6 @@ input[type="email"]::placeholder {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    /* как выровнять по вертикали? */
     padding: 13px;
     margin-right: 8px;
 }
@@ -884,24 +869,11 @@ input[type="email"]::placeholder {
     border: none;
 }
 
-/* .catalog-mailing-title {
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-}
-
-.catalog-mailing-subtitle {
-    text-align: center;
-} */
-
 .catalog-mailing-title {
     color:#000;
-    /* width: 720px; */
     font-size: 30px;
     line-height: 36px;
     min-height: 50px;
-    /* margin: 94px auto 15px; */
     text-transform: uppercase;
     margin-top: 89px;
 }
@@ -955,3 +927,111 @@ input[type="email"]::placeholder {
     text-align: center;
     text-transform: uppercase;
 }
+
+
+.navigation-favorite-popup {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 232px;
+    border-radius: 20px;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+}
+
+.navigation-favorite-hotels {
+    list-style-type: none;
+    width: 350px;
+}
+
+.navigation-favorite-hotel {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-favorite-hotel-img {
+    border-radius: 50px;
+}
+
+.navigation-favorite-hotel-info {
+    margin-left: 17px;
+    margin-right: auto;
+}
+
+.navigation-favorite-hotel-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.navigation-favorite-hotel-type {
+    margin-top: 0;
+}
+
+.navigation-favorite-btn {
+    width: 400px;
+    height: 60px;
+    background-color: #756257;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 21px;
+}
+
+.hotels-search-popup {
+    width: 715px;
+    height: 561px;
+    border-radius: 30px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.hotels-search-filters-fieldset {
+    width: 575px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    margin-left: 68px;
+}
+
+.hotels-search-filters-header {
+    display: flex;
+    align-items: center;
+    margin-top: 54px;
+    margin-bottom: 54px;
+    justify-content: space-between;
+}
+
+.hotels-search-filter-title {
+    font-size: 30;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hotels-search-btn-close {
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+.hotels-search-filter-subtitle {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.hotels-search-filter-input {
+    width: 420px;
+    min-height: 50px;
+    border:  none;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
