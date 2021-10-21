@@ -22,8 +22,8 @@
           </ul>
         </div>
         <div class="navigation-logo-block">
-          <a href="#">
-            <img src="img/index/header/sedona.svg" alt="Логотип с мостом и каньоном" class="main-logo" width="138" height="70">
+          <a class="navigation-logo" href="#">
+            <img class="main-logo" src="img/index/header/sedona.svg" alt="Логотип с мостом и каньоном"  width="138" height="70">
           </a>
         </div>
         <div class="navigation-user-blcok">
@@ -35,9 +35,9 @@
             <li class="navigation-item navigation-item-favorite">
                 <span class="visually-hidden">Список желаний</span>
                 <img src="img/index/header/heart.svg" alt="Сердце" class="heart-icon" width="18" height="17">
-                <!-- <div class="wish-quantity">
+                <div class="wish-quantity">
                   <span class="wish-quantity-number">12</span>
-                </div> -->
+                </div>
             </li>
             <li class="navigation-item">
                 <button class="navigation-link header-btn">
@@ -51,6 +51,7 @@
 
     <main class="main-index main-container">
       <section class="first-screen-section">
+        <!-- Чтобы попап отображался необходимо добавить класс navigation-favorite-popup-avtive -->
         <div class="navigation-favorite-popup">
           <ul class="navigation-favorite-hotels">
             <li class="navigation-favorite-hotel">
@@ -168,36 +169,42 @@
           <span class="hotels-search-btn-text text">Поиск гостиницы в седоне</span>
         </a>
       </section>
-
+      <!-- Чтобы попап отображался необходимо добавить класс  hotels-search-popup-active-->
       <div class="hotels-search-popup">
         <form class="hotels-search-filters" action="https://echo.htmlacademy.ru/" maethod="GET">
           <fieldset class="hotels-search-filters-fieldset">
             <div class="hotels-search-filters-header">
               <h2 class="hotels-search-filter-title text">Поиск гостиницы в Седоне</h2>
-              <button class="hotels-search-btn-close"></button>
+              <button class="hotels-search-btn-close" type="button">
+                <img class="hotels-search-btn-close-cross" src="img/search-popup/modal-close.svg" alt="Крестик" width="13" height="13">
+              </button>
             </div>
             <div class="hotels-search-filter-checkin">
-              <label class="hotels-search-filter-subtitle text" for="checkin-date">Дата заезда:
-                <input class="hotels-search-filter-input" for="checkin-date" type="date" name="checkin-date" value="2020.04.27">
+              <p class="hotels-search-filter-subtitle text">Дата заезда:</p>
+              <label  for="checkin-date">
+                <input class="hotels-search-filter-input" for="checkin-date" type="date" name="checkin-date">
               </label>
-              <p class="hotels-search-filter-checkin-comment text">Мы не можем отправить вас в прошлое.</p>
+              <p class="hotels-search-filter-comment invalid-date">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="hotels-search-filter-checkout">
-              <label class="hotels-search-filter-subtitle text" for="checkout-date">Дата выезда:
-                <input class="hotels-search-filter-input" for="checkout-date" type="date" name="checkout-date" value="2020.04.27">
+              <p class="hotels-search-filter-subtitle text">Дата выезда:</p>
+              <label for="checkout-date">
+                <input class="hotels-search-filter-input" for="checkout-date" type="date" name="checkout-date">
               </label>
-              <p class="hotels-search-filter-checkout-comment text">На эти даты есть свободные номера. Пока есть.</p>
+              <p class="hotels-search-filter-comment">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="hotels-search-filter-guests">
-              <label class="hotels-search-filter-subtitle text" for="quantity-adults-guests">Взрослые:
-                <input for="quantity-adults-guests" type="number">
+              <p class="hotels-search-filter-subtitle text">Взрослые:</p>
+              <label for="quantity-adults-guests">
+                <input class="quantity-guests-input adults" for="quantity-adults-guests" type="number">
               </label>
-              <label class="hotels-search-filter-subtitle text" for="quantity-children-guests">Дети:
-                <button class="quantity-children-guests-info">i</button>
-                <input for="quantity-children-guests" type="number">
+              <p class="hotels-search-filter-subtitle text" >Дети:</p>
+              <label for="quantity-children-guests">
+                <button class="quantity-children-guests-info" type="button">i</button>
+                <input class="quantity-guests-input children" for="quantity-children-guests" type="number">
               </label>
             </div>
-            <button class="hotels-search-btn-submit">Найти</button>
+            <button class="hotels-search-btn-submit" type="submit">Найти</button>
           </fieldset>
         </form>
       </div>
@@ -208,7 +215,7 @@
             <h2 class="mailing-title text">Подпишитесь на рассылку</h2>
             <p class="mailing-subtitle text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <div class="mailing-submit-section">
-              <input class="mailing-email" id="email" type="email" placeholder="Ваш e-mail" required>
+              <input class="mailing-email" id="email" type="email" placeholder="Ваш e-mail">
               <button class="mailing-subscribe-btn text">
                 <span class="mailing-subscribe-btn-text">Подписаться</span>
               </button>

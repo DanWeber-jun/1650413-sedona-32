@@ -11,19 +11,19 @@
             <div class="navigation-block">
                 <ul class="navigation-list">
                   <li class="navigation-item navigation-menu">
-                    <a class="navigation-link navigation-link-current text" href="index.html">Главная</a>
+                    <a class="navigation-link text" href="index.html">Главная</a>
                   </li>
                   <li class="navigation-item navigation-menu">
                     <a class="navigation-link text" href="#" >О Седоне</a>
                   </li>
                   <li class="navigation-item navigation-menu">
-                    <a  class="navigation-link text">Гостиницы</a>
+                    <a  class="navigation-link navigation-link-current text">Гостиницы</a>
                   </li>
                 </ul>
             </div>
             <div class="navigation-logo-block">
-                <a href="#">
-                  <img src="img/index/header/sedona.svg" alt="Логотип с мостом и каньоном" class="main-logo" width="138" height="70">
+                <a class="navigation-logo" href="#">
+                  <img class="main-logo" src="img/index/header/sedona.svg" alt="Логотип с мостом и каньоном" width="138" height="70">
                 </a>
             </div>
             <div class="navigation-user-blcok">
@@ -147,18 +147,15 @@
                         </button>
                     </div> 
                 </div>
-                <div class="gray-top-line"></div>
                 <ul class="hotels list">
                     <li class="hotel">
                         <img class="hotel-img" src="img/catalog/hotels-section/hotel-1.jpg" alt="Гостиница на горной местности" width="180" height="120">
                         <div class="hotel-info">
                             <p class="hotel-name text">Amara Resort & Spa</p>
-                            <!-- не нашёл другого выхода, чтобы выстроить инфу в ряд, верно ли так? -->
                             <div class="hotel-type-price">
                                 <p class="hotel-type">Гостиница</p>
                                 <b class="hotel-price">От 4000 ₽</b>
                             </div>
-                            <!-- не нашёл другого выхода, чтобы выстроить кнопки в ряд, верно ли так? -->
                             <div class="hotel-btns">
                                 <a href="#" class="hotel-details-link hotel-button">
                                     <span class="hotel-details-btn-text text">подробнее</span>
@@ -170,7 +167,7 @@
                         </div>
                         <div class="hotel-rating">
                             <div class="hotel-raiting-stars">
-                                <span class="visually-hidden">4 звезды из 5</span>
+                                <img src="img/catalog/hotels-section/stars-4.svg" alt="4 звезды">
                             </div>
                             <button class="hotel-rating-btn">
                                 <span class="hotel-rating-btn-text">Рейтинг: 8,5</span>
@@ -196,13 +193,12 @@
                         </div>
                         <div class="hotel-rating">
                             <div class="hotel-raiting-stars">
-                                <span class="visually-hidden">3 звезды из 5</span>
+                                <img src="img/catalog/hotels-section/stars-3.svg" alt="3 звезды">
                             </div>
                             <button class="hotel-rating-btn">
                                 <span class="hotel-rating-btn-text">Рейтинг: 8,9</span>
                             </button>
                         </div>
-                        
                     </li>
                     <li class="hotel">
                         <img class="hotel-img" src="img/catalog/hotels-section/hotel-3.jpg" alt="Апартаменты на горной местности" width="180" height="120">
@@ -223,7 +219,7 @@
                         </div>
                         <div class="hotel-rating">
                             <div class="hotel-raiting-stars">
-                                <span class="visually-hidden">2 звезды из 5</span>
+                                <img src="img/catalog/hotels-section/stars-2.svg" alt="2 звезды">
                             </div>
                             <button class="hotel-rating-btn">
                                 <span class="hotel-rating-btn-text">Рейтинг: 9,2</span>
@@ -249,7 +245,7 @@
                             </div>
                         <div class="hotel-rating">
                             <div class="hotel-raiting-stars">
-                                <span class="visually-hidden">2 звезды из 5</span>
+                                <img src="img/catalog/hotels-section/stars-2.svg" alt="2 звезды">
                             </div>
                             <button class="hotel-rating-btn">
                                 <span class="hotel-rating-btn-text">Рейтинг: 9,2</span>
@@ -284,7 +280,7 @@
                     <h2 class="catalog-mailing-title text text">Подпишитесь на рассылку</h2>
                     <p class="catalog-mailing-subtitle text text">Только полезная информация и никакого спама, честное бойскаутское!</p>
                     <div class="catalog-mailing-submit-section">
-                        <input class="catalog-mailing-email" id="email" type="email" name="email" placeholder="Ваш e-mail" required>
+                        <input class="mailing-email" id="email" type="email" name="email" placeholder="Ваш e-mail">
                         <button class="catalog-mailing-subscribe-btn" type="submit">
                             <span class="catalog-mailing-subscribe-btn-text text">Подписаться</span>
                         </button>
