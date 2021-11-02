@@ -83,8 +83,8 @@ body {
 }
 
 .navigation-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center ;
     padding: 0;
     margin-left: 63px;
@@ -133,17 +133,17 @@ body {
 
 .navigation-link {
     display: block;
-    padding: 3px 9px;       
+    padding: 6px 12px;       
 }
 
-.navigation-link:hover {
+.navigation-link:not(.navigation-link-current):hover {
     display: block;  
     color: #756257;
 }
 
 .navigation-link:focus-visible {
-    outline: none !important;
-    box-shadow: #83B3D3 0px 1px 4px, #83B3D3 0px 0px 0px 3px;
+    outline: none;
+    box-shadow: inset #83B3D3 0px 1px 4px, inset #83B3D3 0px 0px 0px 3px;
     border-radius: 10px;
 }
 
@@ -156,7 +156,7 @@ body {
     content: '';
     display: block;
     position: relative;
-    top: 24px;
+    top: 22px;
     width: 100%;
     border: 2px solid #756257;
     background-color: #756257;
@@ -190,6 +190,20 @@ body {
     margin-right: 26px;
 }
 
+.favorite-quantity {
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    background-color: #7DB54F;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 13px;
+    padding: 2px 3px;
+    position: absolute;
+    bottom: 7px;
+    left: 19px;
+}
+
 .navigation-icon:hover {
     fill: #756257;
 }
@@ -204,7 +218,7 @@ body {
     fill: #C4BEBB;
 }
 
-.navigation-item-favorite:after {
+/* .navigation-item-favorite:after {
     content: '12';
     width: 19px;
     height: 19px;
@@ -217,7 +231,7 @@ body {
     position: absolute;
     bottom: 7px;
     left: 19px;
-}
+} */
 
 .navigation-bth {
     margin-left: 0;
@@ -592,8 +606,8 @@ input[type="email"]::placeholder {
 .main-footer-items {
     display: flex;
     justify-content: space-between;
-    margin-top: 22px;
-    margin-bottom: 23px;
+    margin-top: 24px;
+    margin-bottom: 27px;
 }
 
 .main-footer a{
@@ -678,33 +692,31 @@ input[type="email"]::placeholder {
     opacity: 30%;
 }
 
-
 .academy-logo {
     margin-right: 72px;
     align-self: center;
+    
+}
+
+.academy-logo-link {
+    display: block;
     padding: 18px 22px;
+    fill: #000;
 }
 
-.academy-logo:hover {
-    color: #756257;
+.academy-logo-link:hover {
+    fill: #756257;
 }
 
-.academy-logo:focus-visible {
+.academy-logo-link:focus-visible {
     outline: none;
     box-shadow: inset #83B3D3 0px 1px 4px, inset #83B3D3 0px 0px 0px 3px;
     border-radius: 10px;
 }
 
-.academy-logo:active {
-    color: #756257;
+.academy-logo-link:active {
     opacity: 30%;
 } 
-
-
-.logo-html-academy {
-    width: 115px;
-    height: 34px;
-}
 
 .main-inner {
     width: 1200px;
@@ -737,9 +749,26 @@ input[type="email"]::placeholder {
 }
 
 .filter-housing-type {
-    width: 111px;
     min-height: 21px;
     margin-top: 5px;
+}
+
+.filter-housing-home-link {
+    display: inline-block;
+    text-decoration: none;
+    fill: #FFF;
+    padding: 2px 8px 4px 8px;
+    margin-left: -8px;
+}
+
+.filter-housing-home-link:hover {
+    opacity: 0.6;
+}
+
+.filter-housing-home-link:focus {
+    outline: none;
+    box-shadow: inset #83B3D3 0px 1px 4px, inset #83B3D3 0px 0px 0px 3px;
+    border-radius: 4px;
 }
 
 .filter-housing-select {
@@ -747,6 +776,18 @@ input[type="email"]::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+
+.filter-housing-select:hover {
+
+}
+
+.filter-housing-select:focus {
+    outline: none;
+    box-shadow: inset #83B3D3 0px 1px 4px, inset #83B3D3 0px 0px 0px 3px;
+    border-radius: 4px;
 }
 
 .adjustment {
@@ -1040,7 +1081,7 @@ input[type="radio"]:checked + .control-mark::after {
     cursor: pointer;
     color: #fff;
     font-size: 18px;
-    padding: 4px 12px;
+    padding: 4px 14px;
 }
 
 .filter-btn-reset:hover {
@@ -1049,7 +1090,7 @@ input[type="radio"]:checked + .control-mark::after {
 
 .filter-btn-reset:focus-visible {
     outline: none;
-    box-shadow:  #83B3D3 0px 1px 4px,  #83B3D3 0px 0px 0px 3px;
+    box-shadow:  inset #83B3D3 0px 1px 4px,  inset #83B3D3 0px 0px 0px 3px;
     border-radius: 4px;
 }
 
@@ -1351,6 +1392,20 @@ input[type="radio"]:checked + .control-mark::after {
     margin-bottom: 61px;
 }
 
+.load-more-btn:hover {
+    background-color: #68A2CA;
+}
+
+.load-more-btn:focus-visible {  
+    outline: none;
+    box-shadow:  #756257 0px 1px 4px,  #756257 0px 0px 0px 3px;
+    border-radius: 4px;
+}
+
+.load-more-btn:active {  
+    color: #95BEDA;
+}
+
 .hotels-pagination {
     display: flex;
     width: 1056px;
@@ -1378,7 +1433,21 @@ input[type="radio"]:checked + .control-mark::after {
     margin-right: 8px;
 }
 
-.active-btn {
+.hotels-page-btn:not(.current-page):hover {
+    background-color: #68A2CA;
+}
+
+.hotels-page-btn:focus-visible {
+    outline: none;
+    box-shadow:  #756257 0px 1px 4px,  #756257 0px 0px 0px 3px;
+    border-radius: 4px;
+}
+
+.hotels-page-btn:active{
+    color: #95BEDA;
+}
+
+.current-page {
     background-color: #F2F2F2;
     color: #000;
 }
@@ -1405,6 +1474,19 @@ input[type="radio"]:checked + .control-mark::after {
     padding-left: 17px;
     margin-top: 5px;
     cursor: pointer;
+}
+
+.hotels-quantity-order:hover {
+    border-color: #83B3D3;
+}
+
+.hotels-quantity-order:focus-visible {
+    outline: none;
+    border-color: #83B3D3;
+}
+
+.hotels-quantity-order:active {
+    border-color: #E6E6E6;
 }
 
 
@@ -1444,7 +1526,7 @@ input[type="radio"]:checked + .control-mark::after {
 
 .catalog-mailing-submit-section {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
     margin-bottom: 138px;
 }
 
@@ -1465,15 +1547,24 @@ input[type="radio"]:checked + .control-mark::after {
     border: none;
     margin: 0;
     cursor: pointer;
-}
-
-.catalog-mailing-subscribe-btn-text {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
-    line-height: 26px;
-    text-align: center;
     text-transform: uppercase;
+}
+
+.catalog-mailing-subscribe-btn:hover {
+    background-color: #68A2CA;
+}
+
+.catalog-mailing-subscribe-btn:focus-visible {
+    outline: none;
+    box-shadow:  inset #756257 0px 1px 4px,  inset #756257 0px 0px 0px 3px;
+    border-radius: 0 10px 10px 0;
+}
+
+.catalog-mailing-subscribe-btn:active{
+    color: #95BEDA;
 }
 
 .navigation-favorite-popup {
@@ -1819,58 +1910,51 @@ input[value="2020-04-27"] {
 
 
 .minus {
-    display: block;
     position: absolute;
-    margin-top: auto;
+    fill: #AAAAAA;
+    border: none;
     top: 13px;
-    left: 13px;
-    padding: 10px;
-    cursor: pointer;
+    left: 14px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background-color: transparent;
 }
 
-.minus-person {
-    position: absolute;
-    right: 4px;
+.minus-svg {
+    position: relative;
+    top: -4px;
     height: 1px;
-    width: 13px;
-    background-color: #AAAAAA;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+}
+
+.plus-svg {
+    margin-top: 3px;
 }
 
 .plus {
     position: absolute;
-    margin-top: auto;
+    fill: #AAAAAA;
+    border: none;
     top: 13px;
-    right: 13px;
-    padding: 10px;
-    cursor: pointer;
+    right: 14px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background-color: transparent;
 }
 
-.plus-person {
-    position: absolute;
-    right: 4px;
-    height: 1px;
-    width: 13px;
-    background-color: #AAAAAA;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+.minus-plus-btn:hover {
+    fill: #000;
 }
 
-.plus-person::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 1px;
-    width: 13px;
-    background-color: #AAAAAA;
-    border: none;
-    cursor: pointer;
-    transform: rotate(90deg);
-    padding: 0;
+.minus-plus-btn:focus-visible {
+    outline: none;
+    box-shadow: inset #83B3D3 0px 1px 4px, inset #83B3D3 0px 0px 0px 3px;
+    border-radius: 4px;
+}
+
+.minus-plus-btn:active {
+    opacity: 0.2;
 }
 
 .quantity-guests-input  input[value="2"],
@@ -1960,6 +2044,7 @@ input[value="2020-04-27"] {
 }
 
 .guests-info-popup {
+    visibility: hidden;
     position: relative;
     top: -165px;
     left: 285px;
@@ -1982,6 +2067,4 @@ input[value="2020-04-27"] {
     left: 118px;
     z-index: 20;
 }
-
-
 
