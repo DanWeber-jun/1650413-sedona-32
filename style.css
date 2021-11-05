@@ -100,10 +100,6 @@ body {
     list-style: none;
 }
 
-.navigation-item {
-    /* margin:  0; */
-}
-
 .navigation-item:first-child {
     margin-left: 0;
 }
@@ -217,7 +213,7 @@ body {
 }
 
 .navigation-icon:focus-visible {
-    outline: none !important;
+    outline: none;
     box-shadow: #83B3D3 0px 1px 4px, #83B3D3 0px 0px 0px 3px;
     border-radius: 10px;
 }
@@ -255,7 +251,7 @@ body {
 }
 
 .header-btn:focus-visible {
-    outline: none !important;
+    outline: none ;
     box-shadow: #83B3D3 0px 1px 4px, #83B3D3 0px 0px 0px 3px;
     border-radius: 4px;
 }
@@ -735,6 +731,7 @@ input[type="email"]::placeholder {
 .filter-first-screen {
     display: flex;
     justify-content: space-between;
+    background-color: #000;
     background: url(img/catalog/filter-section/catalog-background.jpg) no-repeat;
     height: max-content;
     margin-bottom: 45px;
