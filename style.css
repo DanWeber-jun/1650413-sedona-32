@@ -356,6 +356,7 @@ body {
 
 .reason-img {
     width: 800px;
+    height: 384px;
     object-fit: contain;
 }
 
@@ -393,6 +394,7 @@ body {
 
 .features-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     width: 1200px;
     padding: 0;
@@ -400,7 +402,6 @@ body {
 
 .feature-item {
     width: 400px;
-    margin: 0 auto;
 }
 
 .feature {
@@ -410,8 +411,7 @@ body {
     align-items: center;
 }
 
-.feature-item:nth-of-type(1),
-.feature-item:nth-of-type(3) {
+.feature-item:nth-of-type(odd) {
     background-color: #83B3D31F;
 }
 
@@ -824,11 +824,17 @@ input[type="email"]::placeholder {
 .adjustment {
     display: flex;
     margin-top: 45px;
-    margin-bottom: 77px;
 }
 
 .adjustment-devices {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.adjustment-device{
+    border: none;
+    padding: 0;
+    margin: 0 67px 80px 0;
 }
 
 .adjustment-device:nth-child(1) {
@@ -837,17 +843,13 @@ input[type="email"]::placeholder {
 }
 
 .adjustment-device:nth-child(2) {
-    margin-right: 167px;
     width: 144px;
 }
 
 .adjustment-device:nth-child(3) {
-    margin-right: 81px;
+    margin-left: 100px;
+    margin-right: 0;
     width: 287px;
-} 
-
-.adjustment-device{
-    padding: 0;
 }
 
 .adjustment-device-name {
@@ -865,14 +867,6 @@ input[type="email"]::placeholder {
     margin-bottom: 34px;
 }
 
-
-.adjustment-device {
-    border: none;
-    margin-bottom: 83px;
-    padding-left: 0;
-   margin: 0;
-}
-
 .list {
     list-style-type: none;
     padding-left: 0;
@@ -880,11 +874,11 @@ input[type="email"]::placeholder {
 }
 
 .infrastructure-item:not(.infrastructure-item:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
 .housing-type-item:not(.housing-type-item:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
 .control {
@@ -948,6 +942,7 @@ input[type="checkbox"]:focus-visible + .control-mark {
 
 .control-label {
     margin-left: 39px;
+    font-size: 18px;
 }
 
 .adjustment-device-range-scale {
@@ -1090,6 +1085,8 @@ input[type='number'] {
     flex-direction: column;
     align-items: center;
     margin-top: 55px;
+    margin-right: 72px;
+    margin-left: 75px;
 }
 
 .filter-btn-apply {
@@ -1256,7 +1253,7 @@ input[type='number'] {
 .hotel {
     position: relative;
     display: grid;
-    grid-template-columns: 180px 187px 168px 1fr 160px;
+    grid-template-columns: 180px 187px 1fr 160px;
     grid-template-rows: 30px 1fr 37px;
     justify-items: flex-start;
     margin-bottom: 61px;
@@ -1295,6 +1292,10 @@ input[type='number'] {
 }
 .hotel-img-modal-container:active {
     opacity: 0.3;
+}
+
+.hotel-img {
+    object-fit: contain;
 }
 
 .hotel-name {
