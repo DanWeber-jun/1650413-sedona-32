@@ -898,12 +898,6 @@ input[type="radio"]:checked + .control-mark::after {
   opacity: 0.6;
 }
 
-input[type="radio"]:focus-visible {
-  outline: none;
-  box-shadow: #83b3d3 0 1px 4px, #83b3d3 0 0 0 3px;
-  border-radius: 50%;
-}
-
 input[type="radio"]:focus-visible + .control-mark {
   outline: none;
   box-shadow: #83b3d3 0 1px 4px, #83b3d3 0 0 0 3px;
