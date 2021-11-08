@@ -939,6 +939,7 @@ input[type="checkbox"]:focus-visible + .control-mark {
 
 .adjustment-device-range-bar {
   position: absolute;
+  width: 227px;
   height: 4px;
   background-color: #ffffff;
 }
