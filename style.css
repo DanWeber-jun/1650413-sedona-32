@@ -142,6 +142,9 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 6px 12px;
+  margin-top: -2px;
   position: relative;
   font-weight: 700;
   line-height: 26px;
@@ -149,12 +152,6 @@ body {
   text-decoration: none;
   color: #000000;
   box-sizing: border-box;
-}
-
-.navigation-link {
-  display: block;
-  padding: 6px 12px;
-  margin-top: -2px;
 }
 
 .navigation-link:not(.navigation-link-current):hover {
@@ -510,7 +507,7 @@ body {
   align-items: center;
   width: 1200px;
   min-height: 411px;
-  background: url(img/index/background.jpg) no-repeat;
+  background: url("img/index/background.jpg") no-repeat;
 }
 
 .mailing-title {
@@ -642,11 +639,6 @@ input[type="email"]::placeholder {
   margin-right: 9px;
 }
 
-
-.social-media-link {
-  padding: 8px 8px 4px 8px;
-}
-
 .social-media-twitter {
   width: 18px;
   padding: 10px 9px 4px 9px;
@@ -664,6 +656,7 @@ input[type="email"]::placeholder {
 }
 
 .social-media-link {
+  padding: 8px 8px 4px 8px;
   fill: #83b3d3;
 }
 
@@ -740,7 +733,7 @@ input[type="email"]::placeholder {
 
 .filter-first-screen {
   display: flex;
-  background: url(img/catalog/filter-section/catalog-background.jpg) no-repeat;
+  background: url("img/catalog/filter-section/catalog-background.jpg") no-repeat;
   background-size: cover;
   background-color: #283e49;
   height: max-content;
@@ -905,6 +898,12 @@ input[type="radio"]:checked + .control-mark::after {
   opacity: 0.6;
 }
 
+input[type="radio"]:focus-visible {
+  outline: none;
+  box-shadow: #83b3d3 0 1px 4px, #83b3d3 0 0 0 3px;
+  border-radius: 50%;
+}
+
 input[type="radio"]:focus-visible + .control-mark {
   outline: none;
   box-shadow: #83b3d3 0 1px 4px, #83b3d3 0 0 0 3px;
@@ -924,7 +923,7 @@ input[type="checkbox"]:focus-visible + .control-mark {
 .control-input[type="checkbox"]:checked + .control-mark::after {
   content: "";
   position: absolute;
-  background: url(img/catalog/filter-section/tick.svg) no-repeat center;
+  background: url("img/catalog/filter-section/tick.svg") no-repeat center;
   width: 12px;
   height: 10px;
   padding: 10px;
@@ -1069,7 +1068,6 @@ input[type="number"] {
   top: 13px;
 }
 
-
 .filter-btns {
   display: flex;
   width: 160px;
@@ -1153,7 +1151,7 @@ input[type="number"] {
   height: 48px;
   margin-right: 83px;
   appearance: none;
-  background: url(img/catalog/hotels-section/dropdown.svg) no-repeat;
+  background: url("img/catalog/hotels-section/dropdown.svg") no-repeat;
   background-position: center right 21px;
   padding-left: 19px;
   font-size: 17px;
@@ -1187,10 +1185,6 @@ input[type="number"] {
   margin-right: auto;
 }
 
-.results-display-way-btn {
-  margin-right: 2px;
-}
-
 .showing-list {
   margin: 4px 6px 0 7px;
 }
@@ -1201,6 +1195,7 @@ input[type="number"] {
   border-radius: 4px;
   border: 2px solid #e6e6e6;
   background-color: #ffffff;
+  margin-right: 2px;
   padding: 0;
 }
 
@@ -1331,7 +1326,6 @@ input[type="number"] {
 
 .hotel-price {
   margin-top: 1px;
-  margin-left: 37px;
   margin-bottom: 29px;
   font-size: 18px;
   line-height: 23px;
@@ -1553,7 +1547,7 @@ input[type="number"] {
   width: 160px;
   height: 48px;
   appearance: none;
-  background: url(img/catalog/hotels-section/dropdown.svg) no-repeat;
+  background: url("img/catalog/hotels-section/dropdown.svg") no-repeat;
   background-position: center right 21px;
   padding-left: 17px;
   margin-top: 5px;
@@ -1790,10 +1784,8 @@ input[type="number"] {
 .modal-container-active {
   display: block;
   position: fixed;
-  position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 242px;
   margin-left: 242px;
   width: 715px;
   background: #ffffff;
@@ -1832,7 +1824,6 @@ input[type="number"] {
   border-radius: 50px;
   background-color: #f2f2f2;
   margin: 0;
-  padding: 0;
   border: none;
   padding: 20px;
   cursor: pointer;
@@ -1899,7 +1890,7 @@ input[type="text"]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url(img/search-popup/calendar.svg) no-repeat;
+  background: url("img/search-popup/calendar.svg") no-repeat;
   width: 15px;
   height: 15px;
   border-width: thin;
