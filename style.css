@@ -448,7 +448,7 @@ body {
   width: 720px;
   font-size: 30px;
   line-height: 36px;
-  margin-top: 95px;
+  margin-top: 92px;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
@@ -1593,7 +1593,7 @@ input[type="number"] {
 .catalog-mailing-submit-section {
   display: flex;
   justify-content: center;
-  margin-bottom: 138px;
+  margin-bottom: 135px;
 }
 
 .catalog-mailing-email {
@@ -1637,28 +1637,33 @@ input[type="number"] {
   display: none;
 }
 
-.navigation-favorite-popup-avtive {
+.navigation-favorite-popup-active {
   display: block;
   position: absolute;
   top: 63px;
   right: 72px;
   width: 400px;
   border-radius: 20px;
-  border: 1px solid #e6e6e6;
   background-color: #ffffff;
   z-index: 100;
 }
 
-.navigation-favorite-popup-arrow {
+.navigation-favorite-popup-pointer {
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 187px;
+}
+
+.navigation-favorite-hotels-wrapper {
+  border-radius: 20px  20px 0 0;
+  border: 1px solid #e6e6e6;
+  padding: 16px 15px;
+  border-bottom: transparent;
 }
 
 .navigation-favorite-hotels {
   list-style-type: none;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0;
   padding: 0;
 }
 
