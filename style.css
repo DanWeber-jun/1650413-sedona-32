@@ -165,8 +165,8 @@ body {
   border-radius: 10px;
 }
 
-.navigation-link:active {
-  color: #c4bebb;
+.navigation-link:not(.navigation-link-current):active {
+  color: #d6d0cd;
 }
 
 .navigation-link-current {
@@ -275,9 +275,10 @@ body {
 .first-screen-section {
   width: 1200px;
   min-height: 485px;
+  background-color: #a2dbff;
   background-image: url("img/index/first-screen/first-screen.jpg");
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
   margin: 0 auto;
 }
 
@@ -503,7 +504,9 @@ body {
   align-items: center;
   width: 1200px;
   min-height: 411px;
-  background: url("img/index/background.jpg") no-repeat;
+  background-color: #89aaba;
+  background-image: url("img/index/background.jpg");
+  background-repeat: no-repeat;
 }
 
 .mailing-title {
@@ -890,6 +893,10 @@ input[type="radio"]:checked + .control-mark::after {
   border-radius: 50%;
 }
 
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
 .control-mark:hover {
   opacity: 0.6;
 }
@@ -920,10 +927,10 @@ input[type="checkbox"]:focus-visible + .control-mark {
   cursor: pointer;
 }
 
-
 .control-label {
   margin-left: 39px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .adjustment-device-range-scale {
